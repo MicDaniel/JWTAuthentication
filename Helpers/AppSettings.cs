@@ -12,7 +12,7 @@ namespace JWTAuthentication.Helpers
            application settings via objects that are injected into classes using the ASP.NET Core built
            in dependency injection system
 
-            For example the User Service accesses app settings via an IOption<AppSettings> appSettings
+            For example the TokenBuilder Service accesses app settings via an IOption<AppSettings> appSettings
             object that is injected into the constructor
 
         */

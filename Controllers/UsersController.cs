@@ -1,5 +1,6 @@
 ﻿using JWTAuthentication.Models;
 using JWTAuthentication.Services;
+using JWTAuthentication.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,19 +10,19 @@ using System.Threading.Tasks;
 
 namespace JWTAuthentication.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
-        private IUserService _userService;
+        private readonly IUserService _userService;
+        private readonly ITokenBuilderService _tokenBuilderService;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, ITokenBuilderService tokenBuilderService)
         {
             _userService = userService;
+            _tokenBuilderService = tokenBuilderService;
         }
 
-        [AllowAnonymous]
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]AuthenticateModel model)
         {
@@ -30,14 +31,9 @@ namespace JWTAuthentication.Controllers
             if (user == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
 
-            return Ok(user);
-        }
+            string token = _tokenBuilderService.GenerateToken(user.Id);
 
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            var users = _userService.GetAll();
-            return Ok(users);
+            return Ok(token);
         }
     }
 }
