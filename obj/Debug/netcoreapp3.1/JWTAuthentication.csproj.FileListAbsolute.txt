@@ -1,0 +1,10 @@
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\bin\Debug\netcoreapp3.1\appsettings.json
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\bin\Debug\netcoreapp3.1\JWTAuthentication.exe
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.csprojAssemblyReference.cache
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.AssemblyInfoInputs.cache
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.AssemblyInfo.cs
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.RazorTargetAssemblyInfo.cache
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\obj\Debug\netcoreapp3.1\staticwebassets\JWTAuthentication.StaticWebAssets.Manifest.cache
+D:\ASP.NET Core\API dev\Microservices\JWTAuthentication\obj\Debug\netcoreapp3.1\staticwebassets\JWTAuthentication.StaticWebAssets.xml
